@@ -20,4 +20,12 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 
         return new ResponseEntity(response, HttpStatus.NOT_FOUND);
     }
+
+    @ExceptionHandler(CustomException.EntityBadRequestException.class)
+    public final ResponseEntity handleBadRequestExceptions(Exception ex, WebRequest request) {
+        Response response = Response.badRequest();
+        response.addErrorMsgToResponse(ex.getMessage(), ex);
+
+        return new ResponseEntity(response, HttpStatus.CONFLICT);
+    }
 }

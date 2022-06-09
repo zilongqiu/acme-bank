@@ -23,6 +23,13 @@ public class Response<T> {
         return response;
     }
 
+    public static <T> Response<T> badRequest() {
+        Response<T> response = new Response<>();
+        response.setStatus(Status.BAD_REQUEST);
+
+        return response;
+    }
+
     public static <T> Response<T> exception() {
         Response<T> response = new Response<>();
         response.setStatus(Status.EXCEPTION);
