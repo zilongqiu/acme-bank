@@ -15,6 +15,8 @@ Congrats the application is running! (if not, please wait 1min and retry)
 
 For the endpoints available, please refer to the `requests.http` file.
 
+<img width="759" alt="Screenshot 2022-06-13 at 00 31 20" src="https://user-images.githubusercontent.com/3785828/173243604-8257e116-17c7-4311-903c-46ef6ad1a267.png">
+
 
 ## Docker Services
 
