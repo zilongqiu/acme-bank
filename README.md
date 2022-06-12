@@ -11,6 +11,11 @@ Simple application to check accounts balance and transfer money.
 
 Run: `docker-compose up`
 
+Congrats the application is running! (if not, please wait 1min and retry)
+
+For the endpoints available, please refer to the `requests.http` file.
+
+
 ## Docker Services
 
 | Name      | Image                                                                                                        | Port | Container | Information                                   |

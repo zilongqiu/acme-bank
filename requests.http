@@ -1,0 +1,11 @@
+### Retrieve account 12345678 balance
+GET localhost:8080/api/v1/account/12345678
+
+### Retrieve account 12345678 balance
+GET localhost:8080/api/v1/account/88888888
+
+### Transfer HKD10000 from account 12345678 to 88888888
+POST localhost:8080/api/v1/account/transfer
+Content-Type: application/json
+
+{ "accountFrom": 12345678, "accountTo": 88888888, "amount": 10000}
