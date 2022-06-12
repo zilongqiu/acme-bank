@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  web:
+    build: .
+    container_name: acme-bank
+    restart: on-failure
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
